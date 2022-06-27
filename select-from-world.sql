@@ -39,4 +39,10 @@ SELECT
 FROM
   world
 WHERE
-  name in ('France', 'Germany', 'Italy')
+  name in ('France', 'Germany', 'Italy') -- 6) Show the countries which have a name that includes the word 'United'
+SELECT
+  name
+FROM
+  world
+WHERE
+  name LIKE '%united%'
