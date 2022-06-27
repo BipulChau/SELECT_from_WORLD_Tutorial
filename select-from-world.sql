@@ -32,4 +32,11 @@ SELECT
 FROM
   world
 WHERE
-  continent = 'South America'
+  continent = 'South America' -- 5) Show the name and population for France,Germany, Italy
+SELECT
+  name,
+  population
+FROM
+  world
+WHERE
+  name in ('France', 'Germany', 'Italy')
